@@ -91,25 +91,58 @@ body{
     border-radius: 36px ;
     border: 1px solid blue;
 }
-.h-right .h-right-icons{
-    display: flex;
-    padding-right: 20px;
-    justify-content: center;
-    align-items: center;
-}
-.h-right .h-right-icons i{
-    padding-right: 20px;
-}
-.h-right .wrapper{
+.h-right .account{
+    position: relative;
     display: block;
-    position: absolute;
-    top: 0;
-    left: 1143px;
-    height: 100%;
+}
+.h-right .btn-icon button{
+    box-shadow: none;
+    overflow: hidden;
+}
+.h-right .btn-icon ul{
     width: 298px;
-    background-color: rgb(7, 7, 7);
+}
+.btn-icon .header-avatar{
+    height: 82px;
+    padding: 16px;
     box-sizing: border-box;
-    padding: 10px 10px;
+    display: flex;
+}
+.btn-icon .header-avatar img{
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+    margin-top: 7px;
+}
+.btn-icon .header-avatar .channel_container .avatar_name{
+    font-size: 20px;
+}
+.btn-icon .header-avatar .channel_container p{
+    font-size: 14px;
+    color: blue;
+    margin-bottom: 0;
+}
+.btn-icon hr{
+    padding: 0;
+    margin: 0;
+}
+.btn-icon .logo_categories{
+    padding: 8px 0 8px 0;
+}
+.btn-icon .logo_categories .logo_category{
+    height: 40px;
+    padding-left: 16px;
+    padding-right: 36px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    overflow: hidden;
+}
+.btn-icon .logo_categories .logo_category i{
+    padding-right: 16px;
+}
+.btn-icon .logo_categories .logo_category:hover{
+    background: rgba(238, 236, 236, 0.8);
 }
 .sidebar{
     float: left;
@@ -142,6 +175,10 @@ body{
 }
 .sidebar .sidebar_categories h5{
     font-size: 15px;
+}
+.sidebar .sidebar_categories a{
+    margin-left: 45px;
+    margin-top: 7px;
 }
 .sidebar .sidebar_categories .sidebar_category{
     display: flex;
@@ -185,7 +222,9 @@ body{
     font-size: 15px;
     margin-top: 56px;
 }
-
+.videos .part-videos{
+    padding-left: 26px;
+}
 .videos .video-item{
     width: 293px;
     height: 291px;
