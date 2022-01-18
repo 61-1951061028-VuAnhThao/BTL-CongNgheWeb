@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="icon/themify-icons-font/themify-icons/themify-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <title>Youtube Fake</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="h-left">
+            <i id='menu' class="material-icons">menu</i>
+            <img src="image/youtube.png" alt="">
+        </div>
+
+        <div class="h-search">
+            <form action="">
+                <input type="text" placeholder="Tìm kiếm">
+                <button>
+                    <i class="material-icons">search</i>
+                    <span class="text-search">Tìm kiếm</span>
+                </button>
+                
+            </form>
+        </div>
+
+        <div class="h-right">
+            <div class="btn-icon">
+                <button id="logo" type="button" class="btn drop-toggle" data-bs-toggle="dropdown">
+                    <i class="material-icons">videocam</i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="logo" style="width: 180px;">
+                    <div class="logo1_categories">
+                        <div class="logo1_category">
+                            <i class="bi bi-play-btn"></i>
+                            <span class="txt-span">Tải video lên</span>
+                        </div>
+                        <hr>
+                        <div class="logo1_category">
+                            <i class="bi bi-broadcast"></i>
+                            <span class="txt-span">Phát trực tiếp</span>
+                        </div>
+                    </div>
+                </ul>
+
+                <button id="logo" type="button" class="btn drop-toggle" data-bs-toggle="dropdown">
+                    <i class="material-icons">apps</i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="logo" style="width: 260ox;">
+                    <div class="logo_categories">
+                        <div class="logo_category">
+                            <i class="bi bi-play-btn-fill text-danger"></i>
+                            <span class="txt-span">YouTube TV</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="logo_categories">
+                        <div class="logo_category">
+                            <i class="bi bi-play-circle-fill text-danger"></i>
+                            <span class="txt-span">YouTube Music</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-play-btn-fill text-danger"></i>
+                            <span class="txt-span">YouTube Kids</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="logo_categories">
+                        <div class="logo_category">
+                            <i class="bi bi-play-btn-fill text-danger"></i>
+                            <span class="txt-span">YouTube dành cho nghệ sĩ</span>
+                        </div>
+                    </div>
+                </ul>
+                
+                <button id="logo" type="button" class="btn drop-toggle" data-bs-toggle="dropdown">
+                    <i class="material-icons">notifications</i>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="logo">
+                        <div class="logo_category">
+                            <span class="txt-span">Thông báo</span>
+                            <i class="bi bi-gear" style="padding-left: 150px; padding-right: 0;"></i>
+                        </div>
+                        <hr>
+                        <div class="logo_category text-danger">
+                            <h4> Hiện chưa có thông báo </h4>
+                        </div>
+                </ul>
+                <button id="avatar" type="button" class="btn drop-toggle" data-bs-toggle="dropdown">
+                  <img src="image/avatar_logo.png" alt="">
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="avatar">
+                    <div class="header-avatar">
+                        <img src="image/avatar_logo.png" alt="">
+                        <div class="channel_container">
+                             <div class="avatar_name">
+                              Vũ Anh Thao
+                             </div>
+                             <p>Quản lí tài khoản Google của bạn</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="logo_categories">
+                        <div class="logo_category">
+                            <i class="bi bi-person-square"></i>
+                            <span class="txt-span">Kênh của bạn</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-coin"></i>
+                            <span class="txt-span">Giao dịch và mua gói thành viên</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-gear-wide-connected"></i>
+                            <span class="txt-span">YouTube Studio</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-person-rolodex"></i>
+                            <span class="txt-span">Chuyển đổi tài khoản</span>
+                        </div>
+                        <a href="logout.php">
+                            <div class="logo_category">
+                                <i class="bi bi-box-arrow-in-right"></i>
+                                <span class="txt-span">Đăng xuất</span>
+                            </div>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="logo_categories">
+                        <div class="logo_category">
+                            <i class="bi bi-moon"></i>
+                            <span class="txt-span">Giao diện</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-translate"></i>
+                            <span class="txt-span">Ngôn ngữ : Tiếng Việt</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-globe"></i>
+                            <span class="txt-span">Địa điểm : Việt Nam</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-gear"></i>
+                            <span class="txt-span">Cài đặt</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-file-person"></i>
+                            <span class="txt-span">Dữ liệu của bạn trong youtube</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-question-circle"></i>
+                            <span class="txt-span">Trợ giúp</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-chat-left-text"></i>
+                            <span class="txt-span">Gửi phản hồi</span>
+                        </div>
+                        <div class="logo_category">
+                            <i class="bi bi-keyboard"></i>
+                            <span class="txt-span">Phím tắt</span>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="sidebar">
+            <div class="sidebar_categories">
+                <div class="sidebar_category">
+                    <i class="material-icons">home</i>
+                    <span class="txt-span">Trang chủ</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">explore</i>
+                    <span class="txt-span">Khám phá</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">video_library</i>
+                    <span class="txt-span">Kênh đăng kí</span>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebar_categories">
+                <div class="sidebar_category">
+                    <i class="material-icons">video_library</i>
+                    <span class="txt-span">Thư viện</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">restore</i>
+                    <span class="txt-span">Video đã xem</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">slideshow</i>
+                    <span class="txt-span">Video của bạn</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">watch_later</i>
+                    <span class="txt-span">Xem sau</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">thumb_up</i>
+                    <span class="txt-span">Video đã thích</span>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebar_categories">
+                <h5>KÊNH ĐĂNG KÍ</h5>
+                <div class="sidebar_category">
+                    <img src="image/kenhdk1.png" alt="">
+                    <span class="txt-span">VETV7 ESPORTS</span>
+                </div>
+                <div class="sidebar_category">
+                    <img src="image/kenhdk2.png" alt="">
+                    <span class="txt-span">Kplus Sports</span>
+                </div>
+                <div class="sidebar_category">
+                    <img src="image/kenhdk3.png" alt="">
+                    <span class="txt-span">Phạm Huy Hoàng</span>
+                </div>
+                <div class="sidebar_category">
+                    <img src="image/kenhdk4.png" alt="">
+                    <span class="txt-span">evondev</span>
+                </div>
+                <div class="sidebar_category">
+                    <img src="image/kenhdk5.png" alt="">
+                    <span class="txt-span">Sơn Tùng M-TP</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">expand_more</i>
+                    <span class="txt-span">Hiển thị thêm</span>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebar_categories">
+                <h5>
+                    DỊCH VỤ KHÁC CỦA YOUTUBE
+                </h5>
+                <div class="sidebar_category">
+                    <i class="material-icons">sports_esports</i>
+                    <span class="txt-span">Trò chơi</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">emoji_events</i>
+                    <span class="txt-span"></span>Thể thao</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">stream</i>
+                    <span class="txt-span">Sự kiện trực tiếp</span>
+                </div>
+            </div>
+            <hr>
+            <div class="sidebar_categories">
+                <div class="sidebar_category">
+                    <i class="material-icons">settings</i>
+                    <span class="txt-span">Cài đặt</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">flag</i>
+                    <span class="txt-span">Lịch sử báo cáo</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">help_outline</i>
+                    <span class="txt-span">Trợ giúp</span>
+                </div>
+                <div class="sidebar_category">
+                    <i class="material-icons">feedback</i>
+                    <span class="txt-span">Gửi phản hồi</span>
+                </div>
+            </div>
+            <hr>
+            <div class="footer">
+                <p>
+                    Giới thiệu Báo chí Bản quyền<br> Liên hệ với chúng tôi<br> Người sáng tạo Quảng cáo Nhà phát triển
+                </p>
+                <p>
+                    Điều khoản Quyền riêng tư Chính sách và an toàn<br> Cách YouTube hoạt động<br> Thử các tính năng
+                    mới
+                </p>
+                <div class="txt-footer">
+                    &copy; 2021 Google LLC
+                </div>
+            </div>
+        </div>
+
+        <div class="videos">
+            <div class="container-part">
+                <div class="part-heading">
+                    <h3>Đề xuất</h3>
+                </div>
+
+                <div class="part-videos">
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì Đó Là Em #VDLE (너라서) - OSAD x Shin Hyun Woo</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/ldd__tB_XyQ/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5jte_XaUgRQWdj5VQONANkKcx0A"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/kPdz4HvdgDovV3qKeIu_IPczEx9HORvnNPP93ishIUG2iKRogzI0w4gz885gYssDVt_31SD7Lw=s88-c-k-c0x00ffffff-no-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">TỎ TÌNH HOÀN MỸ - CÓ EM LÀ VÔ CÙNG HOÀN MỸ</h5>
+                        <div class="meta-video">
+                            <p class="video-author">Hẹn Hò Hoàn Mỹ<span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,2 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">1 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="video-item">
+                        <div class="video-image-box">
+                            <img class="video-thumb"
+                                src="https://i.ytimg.com/vi/Pw9u2XSOg_8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCnmRoAbmT_QIn_r1LxD31Ap5E_OA"
+                                alt="">
+
+                            <div class="video-absolute video-watch-after">
+                                <i class="material-icons">query_builder</i>
+                            </div>
+                            <p class="video-absolute video-lenght">4:13</p>
+                        </div>
+                        <div class="video-avatar-box">
+                            <img src="https://yt3.ggpht.com/oi5JeAJ4i4ypi1dST6NxZmQfIq_WT0i14VD-DPaJpyoIp_4kUjGHDOAYDM7D02WjE5BbsxV1=s88-c-k-c0x00ffffff-no-nd-rj"
+                                alt="">
+                        </div>
+                        <h5 class="video-name">Vì đó là em</h5>
+                        <div class="meta-video">
+                            <p class="video-author">OSAD Official <span class="material-icons">check_circle</span></p>
+                            <p>
+                                <span class="video-views">2,3 Tr lượt xem</span>
+                                <span class="material-icons">fiber_manual_record</span>
+                                <span class="created-from-now">2 năm trước</span>
+                            </p>
+                        </div>
+                        <div class="video-action">
+                            <i class="material-icons">more_vert</i>
+
+                            <ul class="video-option">
+                                <li><a href="">Không quan tâm</a></li>
+                                <li><a href="">Thêm vào Xem sau</a></li>
+                                <li><a href="">Thêm vào danh sách phát</a></li>
+                                <li><a href="">Báo cáo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="scrip.js"></script>
+</body>
+
+</html>
